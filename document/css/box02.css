@@ -1,0 +1,29 @@
+* {
+    box-sizing : border-box;
+}
+
+.box {
+    margin: 30px auto;
+    width: 600px;
+    border: 5px solid #f7f7f7
+}
+
+.box01 {
+    margin: 30px auto;
+    background: lightsalmon;
+    padding: 0 40px;
+    font-size: small;
+    }
+
+.box02 {
+    padding: 40px;
+    background: lightgoldenrodyellow
+    }
+
+.box03 {
+    /* inline 인 strong tag를 박스로 바꿈 */
+    display: block;
+    margin: 40px auto;
+    padding: 80px 40px;
+    background: lightcyan;
+    }
