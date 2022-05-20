@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#event {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#event i {
+    background: #fff;
+    color: pink;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#event h2 {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+#event h2::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background: pink;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+#event h2::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background: pink;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+#event p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    line-height: 1.4;
+}
+
+#event .container {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#event img {
+    max-width: 80%;
+    transition: 0.5s;
+}
+
+#event figure {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+#event .container figure:hover img {
+    transform: scale(1.5);
+}
+
+#event figure a {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    padding: 10px 30px;
+    background: pink;
+    color: #333;
+    transition: 0.5s;
+}
+
+#event figure:hover a {
+    top: 10px;
+    left: 0;
+}
+
+.popup {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+    width: 500px;
+    height: 550px;
+    background: pink;
+}
+
+.popup button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    background: pink;
+    height: 100vh;
+    transition: 0.5s;
+    text-align: center;
+}
+
+nav.k {
+    left: 0;
+}
+
+.me {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.me span {
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    height: 3px;
+    background: black;
+    transition: 0.5s;
+}
+
+.me span:nth-child(1) {
+    top: 14px;
+}
+
+.me.k span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.me span:nth-child(2) {
+    top: 14px;
+}
+
+.me.k span:nth-child(2) {
+    transform: rotate(-45deg);
+}

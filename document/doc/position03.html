@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position03</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/position03.css">
+    <script src="../js/position03.js"></script>
+</head>
+
+<body>
+    <main>
+        <section id="event">
+            <h2>
+                <i class="xi-heart-o"></i>
+                <figure><img src="../doc/이미지/헤이그4.png"></figure>
+                <i class="xi-heart-o"></i>
+            </h2>
+            <p>haag is for 'a', we make 'a' lot of things. <br> 특별함 보다는 보통의 것에서 아름다움을 찾습니다.</p>
+            <div class="container">
+                <figure>
+                    <img src="../doc/이미지/헤이그1.jpg" alt="">
+                    <a href="#!"> view</a>
+                </figure>
+                <figure>
+                    <img src="../doc/이미지/헤이그2.jpg" alt="">
+                    <a href="#!"> view</a>
+                </figure>
+                <figure>
+                    <img src="../doc/이미지/헤이그3.jpg" alt="">
+                    <a href="#!"> view</a>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <div class="popup">
+        <button>close</button>
+    </div>
+
+    <script>
+        document.querySelector('.popup button').addEventListener('click', function () {
+            document.querySelector('.popup').style.display = 'none';
+        })
+    </script>
+
+    <nav>
+        <ul>
+            <br><br>
+            <li><a href="">shop</a></li>
+            <br><br>
+            <li><a href="">lookbook</a></li>
+            <br><br>
+            <li><a href="">information</a></li>
+            <br><br>
+            <li><a href="">login</a></li>
+        </ul>
+    </nav>
+
+    <div class="me">
+        <span></span><span></span>
+    </div>
+
+    <script>
+        document.querySelector('.me').addEventListener('click', function () {
+            document.querySelector('nav').classList.toggle('k');
+            this.classList.toggle('k');
+        });
+    </script>
+
+</body>
+
+</html>

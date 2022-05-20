@@ -27,8 +27,8 @@ nav.oo {
 
 .mopen span {
     position: absolute;
-    left: 5px;
-    right: 5px;
+    left: 4px;
+    right: 4px;
     height: 3px;
     background: dodgerblue;
     transition: 0.5s;
@@ -65,3 +65,4 @@ nav.oo {
 .mopen.oo span:nth-child(4) {
     opacity: 0;
 }
+
