@@ -83,7 +83,7 @@ body {
 }
 
 #event figure:hover a {
-    top: 10px;
+    top: 0;
     left: 0;
 }
 
