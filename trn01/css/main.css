@@ -16,7 +16,7 @@ body {
 .top_banner {
     border-top: 2px solid var(--mc);
     border-bottom: 1px solid var(--gc);
-    font-size: 0.65rem;
+    font-size: 0.55rem;
     line-height: 1.5rem;
 }
 
@@ -87,6 +87,16 @@ body {
     position: relative;
 }
 
+.main_visual::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/홈img/pt-bg04.png);
+}
+
 .main_visual .main_slider img {
     width: 100%;
 }
@@ -98,7 +108,7 @@ body {
     width: 1200px;
     text-align: right;
     color: var(--wc);
-    text-shadow: 0 0 2px var(--dc);
+    z-index: 999;
 }
 
 .main_visual .slogan h2 {
@@ -110,8 +120,8 @@ body {
 .main_visual .slogan h2::after {
     content: "";
     display: block;
-    width: 4rem;
-    height: 2px;
+    width: 5rem;
+    height: 1px;
     background: var(--wc);
     margin: 1rem 5px 0 auto;
 }
@@ -120,5 +130,190 @@ body {
     font-size: 0.75rem;
     font-weight: 200;
     line-height: 1.4;
-    text-shadow: 0 0 2px var(--dc);
+}
+
+.main_visual figure {
+    height: 30rem;
+}
+
+.main_visual .item01 {
+    background: url(../img/홈img/main_bg01.jpg) no-repeat center center/100%;
+}
+
+.main_visual .item01.on {
+    background: url(../img/홈img/main_bg01.jpg) no-repeat center center/120%;
+    transition: 2.5s;
+}
+
+
+.main_visual .item02 {
+    background: url(../img/홈img/main_bg02.jpg) no-repeat center center/100%;
+}
+
+.main_visual .item02.on {
+    background: url(../img/홈img/main_bg02.jpg) no-repeat center center/120%;
+    transition: 2.5s;
+}
+
+
+.main_visual .item03 {
+    background: url(../img/홈img/main_bg03.jpg) no-repeat center center/100%;
+}
+
+.main_visual .item03.on {
+    background: url(../img/홈img/main_bg03.jpg) no-repeat center center/120%;
+    transition: 2.5s;
+}
+
+.content {
+    padding: 80px 0;
+}
+
+.content .container {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.content figure {
+    flex: 1;
+}
+
+.content figure .box {
+    overflow: hidden;
+    margin: 0 0 20px 0;
+}
+
+.content figure img {
+    transition: 0.5s;
+}
+
+.content figure:hover img {
+    transform: scale(1.5);
+}
+
+.content strong {
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 17px 0;
+}
+
+.content p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.product {
+    padding: 30px 0;
+    border-top: 1px solid var(--gc);
+}
+
+.product .container {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.product .container .left {
+    flex: 2;
+}
+
+.product .container .right {
+    flex: 1;
+    line-height: 1.4;
+    border-left: 1px solid var(--gc);
+    padding: 15px 0 0 30px;
+}
+
+.product .container .left ul {
+    display: flex;
+    gap: 10px;
+}
+
+.product .tel {
+    border-bottom: 1px solid var(--mc);
+    margin: 0 0 15px 0;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.customer {
+    display: flex;
+}
+
+.customer>div {
+    flex: 1px;
+}
+
+.customer .left {
+    text-align: right;
+    background: url(../img/홈img/main_banner01.jpg) no-repeat center center/cover;
+}
+
+.customer .right {
+    background: url(../img/홈img/main_banner02.jpg) no-repeat center center/cover;
+    border-left: 1px solid var(--gc);
+}
+
+.customer>div a {
+    display: block;
+    color: #fff;
+    padding: 50px 40px;
+    text-shadow: 0 0 30px var(--dc);
+    background: url(../img/홈img/pt-bg01.png);
+}
+
+.customer>div a h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+
+.customer>div a p {
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.footer {
+    padding: 20px 0 60px 0;
+    font-size: 13px;
+}
+
+.footer .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .logo {
+    flex: 1;
+}
+
+.footer address {
+    flex: 4;
+    font-style: normal;
+    padding: 11px 0 0 0;
+}
+
+.footer address ul {
+    margin: 0 0 5px 0;
+}
+
+.footer address li {
+    display: inline-block;
+}
+
+.footer address ul li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background: var(--gc);
+    margin: 0 7px;
 }
