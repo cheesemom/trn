@@ -1,0 +1,49 @@
+.top_banner {
+    border-bottom: 1px solid #ddd;
+    font-size: 0.7rem;
+    line-height: 2rem;
+}
+
+.top_banner .container {
+    display: flex;
+    width: 80rem;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.header {
+    line-height: 9rem;
+}
+
+.header .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header h1 img {
+    margin: 0 auto;
+    width: 100px;
+}
+
+nav>ul {
+    display: flex;
+    gap: 2.5rem;
+    left: 50%;
+    transform: translate(20%);
+}
+
+nav>ul a {
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: center;
+}
+
+nav>ul>li {
+    position: relative;
+}
+
+nav>ul>li:hover {
+    background: #fff;
+    color: gray;
+}
